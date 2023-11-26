@@ -1,0 +1,21 @@
+/* Write your CSS here */
+.app-item {
+  height: 100px;
+  width: 93px;
+  padding: 3px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-img {
+  height: 50px;
+  width: 50px;
+}
+.app-name {
+  font-size: small;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+  text-align: center;
+}

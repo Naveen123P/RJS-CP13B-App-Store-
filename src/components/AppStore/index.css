@@ -1,0 +1,42 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(#fff1eb, #ace0f9);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+}
+.app-store {
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+  text-align: center;
+}
+.search-container {
+  height: 15px;
+  width: 400px;
+  border: 2px solid #7b8794;
+  border-radius: 3px;
+}
+.search-input {
+  border: 0px;
+  background-color: transparent;
+}
+.search-image {
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+}
+.tab-items {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  height: 20px;
+  border-bottom: #dfe2e5;
+}
+.app-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
