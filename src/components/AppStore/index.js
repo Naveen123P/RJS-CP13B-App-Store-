@@ -297,7 +297,6 @@ const appsList = [
 
 class AppStore extends Component {
   state = {isActiveTabId: tabsList[0].tabId, searchInput: ''}
-    console.log(isActiveTabId)
 
   getSearchInput = event => {
     this.setState({searchInput: event.target.value})
@@ -306,7 +305,6 @@ class AppStore extends Component {
   getUpdateTabId = tabId => {
     this.setState({isActiveTabId: tabId})
   }
-  console.log(isActiveTabId)
 
   getFilteredApp = () => {
     const isActiveTabId = this.state
