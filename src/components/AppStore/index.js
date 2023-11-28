@@ -307,7 +307,7 @@ class AppStore extends Component {
   }
 
   getFilteredApp = () => {
-    const isActiveTabId = this.state
+    const {isActiveTabId} = this.state
     const filteredApps = appsList.filter(
       eachItem => eachItem.tabId === isActiveTabId,
     )
@@ -316,7 +316,7 @@ class AppStore extends Component {
 
   render() {
     const filteredApps = this.getFilteredApp()
-    const {activeTabId, searchInput} = this.state
+    const {isActiveTabId, searchInput} = this.state
     const searchResult = filteredApps.filter(eachAppItem =>
       eachAppItem.appName.toLowerCase().includes(searchInput.toLowerCase()),
     )
@@ -342,7 +342,7 @@ class AppStore extends Component {
             <TabItem
               key={eachTabItem.tabId}
               tabDetails={eachTabItem}
-              isActive={activeTabId === eachTabItem.tabId}
+              isActive={isActiveTabId === eachTabItem.tabId}
               getUpdateTabId={this.getUpdateTabId}
             />
           ))}
