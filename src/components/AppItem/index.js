@@ -3,12 +3,14 @@ import './index.css'
 
 const AppItem = props => {
   const {appDetails} = props
-  const {appName, imageUrl} = appDetails
+  const {appName, imageUrl, category} = appDetails
 
   return (
     <li className="app-item">
       <img src={imageUrl} alt={appName} className="app-img" />
-      <h1 className="app-name">{appName}</h1>
+      <p value={category} className="app-name">
+        {appName}
+      </p>
     </li>
   )
 }
