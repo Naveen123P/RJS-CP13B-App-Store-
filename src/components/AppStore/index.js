@@ -309,7 +309,7 @@ class AppStore extends Component {
   getFilteredApp = () => {
     const {isActiveTabId} = this.state
     const filteredApps = appsList.filter(
-      eachItem => eachItem.tabId === isActiveTabId,
+      eachItem => eachItem.category === isActiveTabId,
     )
     return filteredApps
   }
@@ -333,7 +333,7 @@ class AppStore extends Component {
           />
           <img
             src="https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png"
-            alt="..."
+            alt="search icon"
             className="search-image"
           />
         </div>
